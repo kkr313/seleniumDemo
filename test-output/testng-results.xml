@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-28T18:33:42 IST" name="SeleniumJava101" finished-at="2025-03-28T18:36:57 IST" duration-ms="194400">
+    <groups>
+    </groups>
+    <test started-at="2025-03-28T18:33:42 IST" name="Internet Explorer" finished-at="2025-03-28T18:34:08 IST" duration-ms="25648">
+      <class name="TestSelenium.TestScenarios">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:33:42 IST" name="launchBrowser" finished-at="2025-03-28T18:33:59 IST" duration-ms="16546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[internetexplorer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:33:59 IST" name="getURL" finished-at="2025-03-28T18:34:01 IST" duration-ms="1801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateMessage()[pri:1, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:34:01 IST" name="validateMessage" finished-at="2025-03-28T18:34:01 IST" duration-ms="795" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with xpath == //a[text()='Simple Form Demo']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6a103180-6d1e-4cee-a1c2-5dd9647f2ad3, findElement {using=xpath, value=//a[text()='Simple Form Demo']}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a103180-6d1e-4cee-a1c2-5dd9647f2ad3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //a[text()='Simple Form Demo']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6a103180-6d1e-4cee-a1c2-5dd9647f2ad3, findElement {using=xpath, value=//a[text()='Simple Form Demo']}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a103180-6d1e-4cee-a1c2-5dd9647f2ad3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at TestSelenium.TestScenarioPage.getSiteURL(TestScenarioPage.java:103)
+at TestSelenium.TestScenarios.validateMessage(TestScenarios.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:34:01 IST" name="getURL" finished-at="2025-03-28T18:34:03 IST" duration-ms="1245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateDragDrop()[pri:2, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:34:03 IST" name="validateDragDrop" finished-at="2025-03-28T18:34:05 IST" duration-ms="2242" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with xpath == //a[text()='Drag & Drop Sliders']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6a103180-6d1e-4cee-a1c2-5dd9647f2ad3, findElement {using=xpath, value=//a[text()='Drag & Drop Sliders']}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a103180-6d1e-4cee-a1c2-5dd9647f2ad3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //a[text()='Drag & Drop Sliders']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6a103180-6d1e-4cee-a1c2-5dd9647f2ad3, findElement {using=xpath, value=//a[text()='Drag & Drop Sliders']}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a103180-6d1e-4cee-a1c2-5dd9647f2ad3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at TestSelenium.TestScenarioPage.checkSlider(TestScenarioPage.java:121)
+at TestSelenium.TestScenarios.validateDragDrop(TestScenarios.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDragDrop -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:34:05 IST" name="getURL" finished-at="2025-03-28T18:34:06 IST" duration-ms="1035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateFormdEmo()[pri:3, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:34:06 IST" name="validateFormdEmo" finished-at="2025-03-28T18:34:06 IST" duration-ms="614" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with xpath == //a[text()='Input Form Submit']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6a103180-6d1e-4cee-a1c2-5dd9647f2ad3, findElement {using=xpath, value=//a[text()='Input Form Submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a103180-6d1e-4cee-a1c2-5dd9647f2ad3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //a[text()='Input Form Submit']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6a103180-6d1e-4cee-a1c2-5dd9647f2ad3, findElement {using=xpath, value=//a[text()='Input Form Submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a103180-6d1e-4cee-a1c2-5dd9647f2ad3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at TestSelenium.TestScenarioPage.checkFormValidation(TestScenarioPage.java:131)
+at TestSelenium.TestScenarios.validateFormdEmo(TestScenarios.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFormdEmo -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:TestSelenium.TestScenarios@97e93f1]" started-at="2025-03-28T18:34:06 IST" name="endTest" finished-at="2025-03-28T18:34:08 IST" duration-ms="1302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- TestSelenium.TestScenarios -->
+    </test> <!-- Internet Explorer -->
+    <test started-at="2025-03-28T18:33:42 IST" name="Firefox" finished-at="2025-03-28T18:35:19 IST" duration-ms="97181">
+      <class name="TestSelenium.TestScenarios">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:33:42 IST" name="launchBrowser" finished-at="2025-03-28T18:34:03 IST" duration-ms="20884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:34:03 IST" name="getURL" finished-at="2025-03-28T18:34:12 IST" duration-ms="8494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateMessage()[pri:1, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:34:12 IST" name="validateMessage" finished-at="2025-03-28T18:34:22 IST" duration-ms="10912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:34:22 IST" name="getURL" finished-at="2025-03-28T18:34:25 IST" duration-ms="2412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateDragDrop()[pri:2, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:34:25 IST" name="validateDragDrop" finished-at="2025-03-28T18:34:37 IST" duration-ms="12602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDragDrop -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:34:37 IST" name="getURL" finished-at="2025-03-28T18:34:38 IST" duration-ms="888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateFormdEmo()[pri:3, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:34:38 IST" name="validateFormdEmo" finished-at="2025-03-28T18:35:17 IST" duration-ms="38989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFormdEmo -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:TestSelenium.TestScenarios@491b9b8]" started-at="2025-03-28T18:35:17 IST" name="endTest" finished-at="2025-03-28T18:35:19 IST" duration-ms="1967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- TestSelenium.TestScenarios -->
+    </test> <!-- Firefox -->
+    <test started-at="2025-03-28T18:33:42 IST" name="Chrome" finished-at="2025-03-28T18:35:46 IST" duration-ms="123500">
+      <class name="TestSelenium.TestScenarios">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:33:42 IST" name="launchBrowser" finished-at="2025-03-28T18:34:20 IST" duration-ms="37706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:34:20 IST" name="getURL" finished-at="2025-03-28T18:34:22 IST" duration-ms="2542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateMessage()[pri:1, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:34:22 IST" name="validateMessage" finished-at="2025-03-28T18:34:41 IST" duration-ms="18180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:34:41 IST" name="getURL" finished-at="2025-03-28T18:34:41 IST" duration-ms="888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateDragDrop()[pri:2, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:34:41 IST" name="validateDragDrop" finished-at="2025-03-28T18:34:58 IST" duration-ms="16772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDragDrop -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:34:58 IST" name="getURL" finished-at="2025-03-28T18:34:59 IST" duration-ms="515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateFormdEmo()[pri:3, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:34:59 IST" name="validateFormdEmo" finished-at="2025-03-28T18:35:45 IST" duration-ms="46474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFormdEmo -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:TestSelenium.TestScenarios@3f4faf53]" started-at="2025-03-28T18:35:45 IST" name="endTest" finished-at="2025-03-28T18:35:46 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- TestSelenium.TestScenarios -->
+    </test> <!-- Chrome -->
+    <test started-at="2025-03-28T18:33:42 IST" name="Edge" finished-at="2025-03-28T18:36:57 IST" duration-ms="194400">
+      <class name="TestSelenium.TestScenarios">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:33:42 IST" name="launchBrowser" finished-at="2025-03-28T18:35:40 IST" duration-ms="117348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:35:40 IST" name="getURL" finished-at="2025-03-28T18:35:42 IST" duration-ms="2160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateMessage()[pri:1, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:35:42 IST" name="validateMessage" finished-at="2025-03-28T18:35:56 IST" duration-ms="14050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:35:56 IST" name="getURL" finished-at="2025-03-28T18:35:56 IST" duration-ms="234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateDragDrop()[pri:2, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:35:56 IST" name="validateDragDrop" finished-at="2025-03-28T18:36:14 IST" duration-ms="17866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDragDrop -->
+        <test-method is-config="true" signature="getURL(java.lang.String)[pri:0, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:36:14 IST" name="getURL" finished-at="2025-03-28T18:36:14 IST" duration-ms="271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lambdatest.com/selenium-playground/.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="validateFormdEmo()[pri:3, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:36:14 IST" name="validateFormdEmo" finished-at="2025-03-28T18:36:56 IST" duration-ms="42171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFormdEmo -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:TestSelenium.TestScenarios@60f00693]" started-at="2025-03-28T18:36:56 IST" name="endTest" finished-at="2025-03-28T18:36:57 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- TestSelenium.TestScenarios -->
+    </test> <!-- Edge -->
+  </suite> <!-- SeleniumJava101 -->
+</testng-results>

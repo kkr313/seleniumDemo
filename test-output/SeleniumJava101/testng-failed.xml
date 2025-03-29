@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [SeleniumJava101]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Internet Explorer(failed)">
+    <parameter name="browser" value="internetexplorer"/>
+    <parameter name="URL" value="https://www.lambdatest.com/selenium-playground/."/>
+    <classes>
+      <class name="TestSelenium.TestScenarios">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="endTest"/>
+          <include name="validateMessage"/>
+          <include name="getURL"/>
+          <include name="validateDragDrop"/>
+          <include name="validateFormdEmo"/>
+        </methods>
+      </class> <!-- TestSelenium.TestScenarios -->
+    </classes>
+  </test> <!-- Internet Explorer(failed) -->
+</suite> <!-- Failed suite [SeleniumJava101] -->
