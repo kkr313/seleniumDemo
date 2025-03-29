@@ -1,0 +1,22 @@
+# Ignore IDE and editor settings
+.metadata/
+.settings/
+.vscode/
+.classpath
+.project
+ 
+# Ignore build and output directories
+target/
+test-output/
+ 
+# Ignore dependency and environment files
+*.log
+*.iml
+ 
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+ 
+# Ignore temporary and system-generated files
+*.tmp
+*.swp
